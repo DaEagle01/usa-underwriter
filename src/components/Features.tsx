@@ -52,7 +52,7 @@ const Features = () => {
                     ))}
                 </div>
             </div>
-            <div className="flex justify-center h-fit rounded-full gap-[14px] w-full ">
+            <div className="flex md:hidden justify-center h-fit rounded-full gap-[14px] w-full">
                 {carouselItems.map((item, inx) => (
                     <button key={item.title} onClick={() => setCurrentSlider(inx)} className={`rounded-full duration-300 ${inx === currentSlider ? "bg-[#6B7280]" : "bg-white"} border border-gray-600 w-4 h-4`}></button>
                 ))}
