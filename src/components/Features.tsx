@@ -21,7 +21,7 @@ const Features = () => {
     return (
         <div className="pt-11 md:pt-[72px] pb-4 md:pb-[87px] flex flex-col gap-3 md:gap-10">
             <div className="grid grid-cols-12 gap-[34px]">
-                <div className="col-span-12 md:col-span-5 text-center md:text-left">
+                <div className="col-span-11 md:col-span-5 text-center md:text-left">
                     <h1 className="text-sm md:text-base font-medium text-[#374151]">
                         Our Features
                     </h1>
@@ -32,7 +32,7 @@ const Features = () => {
                         MCCA Refund FAQ
                     </Button>
                 </div>
-                <div className="col-span-12 md:col-span-7 flex justify-end">
+                <div className="col-span-11 md:col-span-7 flex justify-end">
                     <p className="text-xs md:text-base font-medium text-[#6B7280] w-full md:w-[91%]">
                         The Michigan Catastrophic Claims Association approved refunds for certain Michigan Policyholders due a surplus of funds being held by the MCCA. The approved refund will be $400 per eligible vehicle insured with USA Underwriters on October 31st, 2021 at 11:59 PM, or $80 if the vehicle is an insured historical vehicle.
                     </p>

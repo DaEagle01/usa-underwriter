@@ -21,28 +21,6 @@ const Hero = () => {
 
     return (
         <div>
-            {/* <div className="bg-[#C81E1E] grid grid-cols-12 rounded-xl">
-                <div className="col-span-12 md:col-span-6 flex flex-col justify-center px-4 py-8 md:pl-[54px] md:pt-[67px] md:pb-[83px]">
-                    <p className="text-3xl xl:text-5xl font-bold text-white uppercase">
-                        Get affordable, same-day coverage in no time.
-                    </p>
-                    <p className="text-xs md:text-base font-medium text-white pt-4 pb-8 md:pb-10">
-                        With roots over a century deep in the birthplace of the automobile industry, USA Underwriters has the knowledge and expertise to help tailor a policy to suit your lifestyle, your budget, and your priorities.
-                    </p>
-                    <div className="flex items-center">
-                        <Button className="rounded-full px-6 sm:px-8 py-4 h-max bg-white hover:bg-gray-200 text-gray-800 hover:text-gray-900 text-base font-medium">
-                            Report a Claim
-                        </Button>
-                        <Button className="rounded-full px-4 md:px-8 py-4 h-max bg-[#C81E1E] hover:bg-[#fa3232] text-[#E5E7EB] hover:text-[#f4f5f7] text-base font-medium flex items-center gap-2">
-                            Learn More
-                            <MoveRight />
-                        </Button>
-                    </div>
-                </div>
-                <div className="col-span-6 hidden md:flex justify-center items-end">
-                    <Image src={heroImagePerson} alt="dummy person" />
-                </div>
-            </div> */}
             <div className="w-full h-[394px] md:h-[514px] relative overflow-hidden">
                 <div className="ease-linear duration-500 flex transform-gpu" style={{ transform: `translateX(-${currentSlider * 100}%)` }}>
                     {carouselItems.map((slide, inx) => (

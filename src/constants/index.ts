@@ -12,7 +12,7 @@ export const publicRoutes = [
     name: "Contact Us",
   },
   {
-    path: "/",
+    path: "/placeholder",
     name: "Policyholder Portal",
   },
 ];
