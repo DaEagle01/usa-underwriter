@@ -1,6 +1,6 @@
 'use client';
 
-import { ChevronRight, Home } from 'lucide-react'
+import { ChevronRight } from 'lucide-react'
 import React from 'react'
 import homeIcon from "../../../public/assets/homeIcon.png";
 import aboutUsImage from "../../../public/assets/aboutUsImage.png";
@@ -8,6 +8,7 @@ import Image from 'next/image';
 import { features } from '@/constants';
 import FeatureCard from '@/components/FeatureCard';
 import { useCallback, useEffect, useState } from "react";
+import Link from 'next/link';
 
 const AboutUs = () => {
     const [currentSlider, setCurrentSlider] = useState(0);
@@ -26,10 +27,12 @@ const AboutUs = () => {
         <div className='w-full h-full max-w-[90rem] mx-auto px-3 md:px-8 lg:px-20 pt-8 md:pt-[26px] pb-10 md:pb-16 leading-[150%]'>
             <div className='flex flex-col items-center gap-2 md:gap-[18px]'>
                 <h1 className='text-[#111928] md:text-[#212529] font-semibold md:font-medium text-xl md:text-4xl'>About us</h1>
-                <div className='flex items-center gap-1 md:gap-4'>
-                    <Image src={homeIcon} alt="home icon" width={16} />
-                    <h1 className='text-[#374151] font-normal text-sm'>About us</h1>
-                    <ChevronRight size={20} strokeWidth={2.5} color='#6B7280' />
+                <div className='flex items-center gap-[5px] md:gap-4'>
+                    <Link href="/" className='flex items-center gap-[5px] md:gap-4'>
+                        <Image src={homeIcon} alt="home icon" width={16} className='-mt-[2px]' />
+                        <h1 className='text-[#374151] font-normal text-sm'>Home</h1>
+                    </Link>
+                    <ChevronRight size={18} strokeWidth={3} color='#6B7280' />
                     <h1 className='text-[#6B7280] font-normal text-sm'>About us</h1>
                 </div>
             </div>
